@@ -46,7 +46,7 @@ public Logger logger;
 		if(br.equals("chrome"))
 		{
 		//Chrome Browser
-		System.setProperty("webdriver.chrome.driver",configPropObj.getProperty("chromepath"));
+			System.setProperty("webdriver.chrome.driver","./drivers/chromedriver.exe");
 		driver=new ChromeDriver();
 		}
 		else if(br.equals("firefox"))
